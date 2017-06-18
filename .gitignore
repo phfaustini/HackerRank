@@ -1,3 +1,6 @@
 *.txt
 *.out
 .vscode
+*.wpr
+*.idea
+*__pycache__*

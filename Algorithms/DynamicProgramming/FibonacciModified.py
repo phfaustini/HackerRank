@@ -1,4 +1,5 @@
-#https://www.hackerrank.com/challenges/fibonacci-modified?h_r=internal-search
+#https://www.hackerrank.com/challenges/fibonacci-modified
+# DONE
 from fileinput import input
 
 def fib(t1, t2):
