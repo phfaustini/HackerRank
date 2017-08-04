@@ -4,11 +4,20 @@
 #include<iostream>
 #include<stack>
 using namespace std;
+
+
+typedef struct
+{
+    int value;
+    int maxSoFar;
+}
+STACK;
+
 int main()
 {
-    int q, popIgnore = 0, biggest = 0;
+    int q;
     cin >> q;
-    stack<int> myStack;
+    stack<STACK> myStack;
     while(q)
     {
         q--;
@@ -21,28 +30,32 @@ int main()
                     cin >> n;
                     if(myStack.empty())
                     {
-                        myStack.push(n);
-                        biggest = n;
+                        STACK s;
+                        s.value = n;
+                        s.maxSoFar = n;
+                        myStack.push(s);
                     }
-                    else if (n > myStack.top())
+                    else if(n >= myStack.top().maxSoFar)
                     {
-                        myStack.push(n);
-                        biggest = n;
+                        STACK s;
+                        s.value = n;
+                        s.maxSoFar = n;
+                        myStack.push(s);
                     }
                     else
                     {
-                        popIgnore++;
-                        biggest = 0;
+                        STACK s;
+                        s.value = n;
+                        s.maxSoFar = myStack.top().maxSoFar;
+                        myStack.push(s);
                     }
                     break;
             case 2: // Pop element
-                    if(!popIgnore || biggest)
+                    if(! myStack.empty())
                         myStack.pop();
-                    else 
-                        popIgnore--;
                     break;
             case 3: // Print maximum element
-                    cout << myStack.top() << endl;
+                    cout << myStack.top().maxSoFar << endl;
                     break;
         }
     }

@@ -3,14 +3,9 @@ Algorithms:
 		Goodland Electricity
 		https://www.hackerrank.com/challenges/pylons
 
-
-
 	Dynamic Programming: 
 		abbreviation
 		https://www.hackerrank.com/challenges/abbr
-	 
-		longest commom subsequence
-		https://www.hackerrank.com/challenges/dynamic-programming-classics-the-longest-common-subsequence
 
 		maximum subarray
 		https://www.hackerrank.com/challenges/maxsubarray
@@ -42,10 +37,6 @@ DatStructures:
 
 		Queue using two stacks
 		https://www.hackerrank.com/challenges/queue-using-two-stacks
-
-	Stacks:
-		Maximum element
-		https://www.hackerrank.com/challenges/maximum-element
 
 	Trie:
 		Contacts
