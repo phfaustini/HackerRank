@@ -1,5 +1,6 @@
 #!/bin/python3
-
+# https://www.hackerrank.com/challenges/battery/problem
+# DONE
 """
 # Visualising data before:
 import matplotlib.pyplot as plt

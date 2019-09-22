@@ -3,4 +3,5 @@
 .vscode
 *.wpr
 *.idea
+*.json
 *__pycache__*
